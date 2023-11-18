@@ -1,0 +1,387 @@
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: #181a1b;
+}
+html, body {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+		@font-face {
+			font-family: 'blogger-sans';
+			src: url('https://cdn.octothorp.team/gmod/resource/fonts/bloggerm.ttf') format('truetype');
+		}
+
+		html {
+			height: 100%;
+		}
+
+		body {
+			padding: 0;
+			margin: 0;
+			height: 100%;
+
+			background-color: #554455;
+			background-image: url(https://cdn.octothorp.team/img/bg/dbg-nd.png);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		#main-text {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: url(loadingscreen_text.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		#loading {
+			position: absolute;
+			top: 50%;
+			margin: -200px 8.5%;
+			height: 400px;
+			width: 83%;
+			border-bottom: dashed 2px rgba(0,0,0, 0.35);
+			/* border-radius: 8px; */
+			/* background-color: #3B2F3B; */
+		}
+
+		#car {
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			left: 1%;
+			bottom: 0;
+		}
+
+		#city {
+			width: 96px;
+			height: 96px;
+			position: absolute;
+			right: 1%;
+			bottom: 0;
+		}
+
+		#hint {
+			/* position: absolute; */
+			/* bottom: 20px; */
+			/* left: 30px; */
+			margin: auto;
+			padding-top: 25px;
+			text-align: center;
+			color: #EEEEEE;
+			font-family: blogger-sans;
+			font-size: 18pt;
+			max-width: 800px;
+
+			transition: opacity 0.5s;
+			opacity: 1;
+		}
+
+		#hint2 {
+			position: fixed;
+			bottom: 20px;
+			left: 30px;
+			color: #EEEEEE;
+			font-family: blogger-sans;
+			font-size: 18pt;
+			margin: 0;
+
+			animation-name: softblink;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes softblink {
+			0% { opacity: 1 }
+			50% { opacity: 0.35 }
+			90% { opacity: 1 }
+		}
+
+		#hint.fade {
+			opacity: 0;
+		}
+	</style><style class="darkreader darkreader--sync" media="screen"></style>
+<meta name="darkreader" content="9ba20b1408134e01bc4ba27554a23cd9"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #032029 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #0a0a0a !important;
+}
+.tou-uknfeu {
+    background-color: #231603 !important;
+}
+.tou-6i3zyv {
+    background-color: #19576c !important;
+}
+div.mermaid-viewer-control-panel .btn {
+  fill: var(--darkreader-neutral-text);
+  background-color: var(--darkreader-neutral-background);
+}
+svg g rect.er {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+  fill-opacity: 0.8 !important;
+  fill: var(--darkreader-selection-background);
+}
+svg rect.er.relationshipLabelBox {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect, svg g g.nodes polygon {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+  fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0, svg line.messageLine1 {
+  stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+  fill: var(--darkreader-neutral-background) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+
+<body>
+	<div id="main-text"></div>
+	<div id="loading">
+		<img src="old.octothorp.team_files/city1.png" id="city">
+		<img src="old.octothorp.team_files/bus.png" id="car">
+	</div>
+	<p id="hint" class="">Если ты хочешь получить доступ к новым инструментам или другим интересностям, можно заглянуть в магазин плюшек на F4</p>
+	<p id="hint2">Едем в Доброград...</p>
+
+	<script>
+		if (Math.random() > 0.98) document.getElementById('car').src = 'https://cdn.octothorp.team/icons/color64/car' + Math.floor(Math.random() * 3 + 1) + '.png'
+
+		function shuffle(a) {
+			var j, x, i
+			for (i = a.length - 1; i > 0; i--) {
+				j = Math.floor(Math.random() * (i + 1))
+				x = a[i]
+				a[i] = a[j]
+				a[j] = x
+			}
+			return a
+		}
+
+		var hints = shuffle([
+			'Не говори неролевую информацию в голосовой чат или ролевой текстовый чат (MG). Используй команду /l, чтобы не получить бан',
+			'Если ты у нас впервые, обязательно ознакомься с обучением (F1)<br>Так будет намного легче сориентироваться и понять, с чего начать',
+			'Если ты хочешь подать жалобу на игрока, но администратора в данный момент нет на сервере, стоит написать жалобу на нашем форуме, обязательно ознакомившись с формой подачи заявки',
+			'Если ты хочешь помочь серверу как администратор, можно подать заявку на стажировку на нашем форуме',
+			'Если у тебя есть предложения по улучшению игры, можно оформить предложение на нашем форуме',
+			'Если игрок нарушил правило и это тебе мешает, не нужно прибегать к оскорблениям или ответным нарушениям, это карается баном<br>В таком случае стоит уведомить администратора',
+			'Если тебе нравится Доброград, можно попробовать другие наши проекты, их список доступен на сайте или в ESC-меню',
+			'На некоторых серверах есть уникальный общественный транспорт:<br>на Новом Доброграде это автобусные остановки',
+			'Старайся чаще использовать ролевые команды, например /me и /it,<br>они помогут хорошо развить твою историю',
+			'Ты можешь настроить краткое описание внешности<br>в меню персонажа на F4',
+			'Ты можешь узнать много полезной информации о твоем окружении используя функцию \'приглядеться\'<br>(по умолчанию активируется на клавишу G)',
+			'Клавиши особых действий нашего игрового режима можно изменить в меню настроек на F4',
+			'Чтобы оставаться в курсе всех событий и обновлений, обязательно следи за нашей группой ВК и форумом, а в Discord публикуются все изменения и ближайшие планы',
+			'Если нужно узнать рецепт крафта какого-то предмета, всегда можно посмотреть его в справочнике на F4 или на вики',
+			'Если ты хочешь получить доступ к новым инструментам или другим интересностям, можно заглянуть в магазин плюшек на F4',
+		])
+
+		var curHintID = -1
+		function nextHint() {
+			var el = document.getElementById('hint')
+			el.classList.add('fade')
+			setTimeout(function() {
+				curHintID ++
+				if (curHintID >= hints.length) curHintID = 0
+				el.innerHTML = hints[curHintID]
+				el.classList.remove('fade')
+			}, 500)
+		}
+		nextHint()
+		setInterval(nextHint, 10000)
+
+		function clamp(num){
+			return Math.min(Math.max(num, 0), 1)
+		}
+
+		var left = 1, stLeft = 5, filesTotal, wsTotal, filesLeft, wsLeft, finished;
+		function updateProgress() {
+			if (!filesLeft || !wsLeft) return
+			left = finished ? 0 : clamp(stLeft / 5) * 0.5 + clamp(filesLeft / filesTotal) * 0.1 + clamp(wsLeft / wsTotal) * 0.4
+		}
+
+		function SetStatusChanged(status){
+			if (status == 'Sending client info...'){
+				finished = true
+				// document.getElementById('hint').innerHTML = 'Почти на месте...'
+			} else if (status.search(/Extracting|Loading/i) == -1) stLeft = Math.max(stLeft - 1, 0)
+			else wsLeft --
+
+			updateProgress()
+		}
+
+		// total server files
+		function SetFilesTotal(files){
+			if (!filesTotal){
+				filesTotal = files
+				filesLeft = files
+				updateProgress()
+			}
+		}
+
+		// total workshop items
+		function SetFilesNeeded(ws){
+			if (!wsTotal){
+				wsTotal = ws
+				wsLeft = ws
+				updateProgress()
+			}
+		}
+
+		function DownloadingFile(name){
+			filesLeft --
+			updateProgress()
+		}
+
+		var val = 1
+		setInterval(function(){
+			if (val == left) return
+
+			val = Math.max(val - Math.max((val - left) * 0.01, 0.00002), 0)
+			document.getElementById('car').style.left = (93 * (1 - val)) + '%'
+		}, 16)
+	</script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'827b5ef16d392473',t:'MTcwMDI1OTczMC4yNjAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: medium; visibility: hidden; --darkreader-inline-border-top: currentcolor; --darkreader-inline-border-right: currentcolor; --darkreader-inline-border-bottom: currentcolor; --darkreader-inline-border-left: currentcolor;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""></iframe><script defer="defer" src="old.octothorp.team_files/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;827b5ef16d392473&quot;,&quot;r&quot;:1,&quot;version&quot;:&quot;2023.10.0&quot;,&quot;token&quot;:&quot;24f9e9d7b7014b868fc44b4f0b74bc43&quot;}" crossorigin="anonymous"></script>
+
+
+</body></html>
